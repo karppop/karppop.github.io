@@ -1,0 +1,63 @@
+body{
+    background-color: rgba(165, 148, 114, 0.754);
+    /*Para darle un mismo olor a todo el fondo*/
+    display: flexbox;
+    /*Permiteposicionar los elementos en filas y columnas*/
+    margin: 10px;
+}
+
+header{
+    /*Para pasarle parametros al titulo principal(centrado,tamaño, color)*/
+    text-align: center;
+    font-size: 30px;
+    color: rgb(25, 21, 21);
+}
+
+main{
+    /*Separo en dos columnas y marco el espacio entre ellas*/
+    column-count: 2;
+    column-gap: 5px;
+}
+
+article{
+    /*Estandarizo los vaores en todos los articulos: separaciones, bordes, color letra*/
+    margin: 10px;
+    padding: 5px;
+    font-size: 25px;
+    border: 2px solid rgb(240, 93, 108);
+    background-color: rgb(181, 158, 176);
+    display: block;
+    /*Para que el texto no sobrepase a su contenedor en caso de achicar la pantalla*/
+    overflow-wrap: break-word;
+    
+}
+
+.img_container{
+    display: flex;
+    /*Distribuye el espacio entre los elementos   de manera uniforme*/
+    justify-content: space-evenly;
+    /*especifica si los elementos hijos son obligados a permanecer en una misma linea o qu fluyan en varias>*/
+    flex-wrap: wrap;
+    
+    
+}
+p{
+    /*Tamaño y centrado del parrafo*/
+    font-size: 15px;
+    text-align: center;
+
+}
+img{
+    /*Parametros para las imagenes: alto, ancho, margen, borde*/
+    height: 200px;
+    width: 200px;
+    margin: 20px;
+    border: solid rgb(70, 100, 70);
+    
+}
+.video_container{
+    /*Es para darle estilo al parrafo que acompaña al video*/
+    font-size: 35px;
+    text-align: center;
+}
+
