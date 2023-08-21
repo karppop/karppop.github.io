@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra, papel o tijera</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="style.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Piedra, papel o tijera</h1>
+        <p>Ingrese su nombre</p><input class="nombreUsuario" id="nombreUsuario">
+    </header>
+    <main>
+        <p class="instrucciones" id="instrucciones">El primero que llega a 3 puntos gana </p>
+    <div class="marcador">
+       <p class="nombre-jugador">Jugador</p>
+       <p class="nombre-computadora">Computadora</p>
+       <p class="puntos">
+         <span id="puntos-usuario">0</span>
+         <span>-</span>
+         <span id="puntos-computadora">0</span>
+       </p>
+    </div> 
+    <div class="marca-tu-opcion" id="marca-tu-opcion">
+      <h2>Marcá tu opción para el proximo turno</h2>
+      <div class="opcion">
+      <button class="opcion" id="piedra">Piedra</button>
+      <button class="opcion" id="papel">Papel</button>
+      <button class="opcion" id="tijera">Piedra</button>
+    </div>
+    <div class="mensaje" id="mensaje">
+    <p>
+        Usaste <span class="eleccion" id="eleccion-usuario">papel</span><br>
+        Y la computadora usó <span class="eleccion" id="eleccion-computadora">papel</span>
+    </p>
+    <p id="gana-punto">¡Ganaste un punto!</p>
+    </div>
+    <button class="reiniciar" id="reiniciar">Reiniciar juego</button>
+    <div>
+        </div>
+    </div>
+
+    </main>
+    
+</body>
+
+</html>
