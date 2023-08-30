@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(52, 68, 120);
+    background-color: rgb(89, 106, 160);
     color: rgb(214, 214, 180);
 }  
 
@@ -11,7 +11,27 @@ justify-content: center;
 padding: 1rem;
 background-color: rgb(214, 214, 180);
 color: rgb(52, 68, 120);
+border-bottom-left-radius: 2rem;
+border-bottom-right-radius: 2rem;
 }
+
+.nombre {
+    display: flex;
+    background-color: rgb(89, 106, 160);
+    align-items: center;
+    justify-content: center;
+    }
+.nombreUsuario {
+    text-align: center;
+    }
+.nombreUsuario:hover {
+    padding: .5rem;
+    font-size: 1rem;
+} 
+#capturarNombre:hover {
+    padding: .5rem;
+}   
+
 
 main {
     display: flex;
@@ -22,3 +42,91 @@ main {
     text-align: center;
 
 }
+
+.instrucciones {
+    margin-bottom: 3rem;
+}
+
+.marcador {
+   background-color: rgb(214, 214, 180);
+   color: rgb(52, 68, 120);
+   padding: 1rem 2rem;
+   position: relative;
+   display: flex;
+   align-items: center;
+   font-weight: 600;
+   margin-bottom: 2rem;
+}
+
+.marcador .nombre {
+    position: absolute;
+    color: rgb(214, 214, 180);
+    background-color: rgb(52, 68, 120);
+    line-height: 1;
+    padding: .5rem;
+    border: 2px solid rgb(214, 214, 180);
+}
+
+.marcador .nombre-jugador {
+    right: 85%;
+}
+
+.marcador .nombre-computadora {
+    left: 85%;
+}
+
+.marcador .puntos {
+    font-size: 1.5rem;
+}
+
+.marca-tu-opcion {
+    margin-bottom:2rem;
+}
+
+.marca-tu-opcion h2 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-bottom: .5rem;
+}
+
+.opcion {
+    font-size: 1.5rem;
+    border: 1;
+    padding: .2rem;
+    border-radius: .8rem;
+    cursor: pointer;
+    margin: 1rem;
+    }
+.opcion:hover {
+    font-size: 1.8rem;
+    background-color: aquamarine;
+}    
+
+.mensaje {
+    margin-bottom: 3rem;
+    line-height: 2;
+}
+
+.mensaje .eleccion {
+    color: rgb(2, 8, 22);
+    /*background-color: rgb(214, 214, 180);*/
+    padding-inline: .4rem;
+    /*border-radius: .5rem;*/
+}
+
+.reiniciar {
+    border: 0;
+    line-height: 1;
+    background-color: rgb(214, 214, 180);
+    color: rgb(52, 68, 120);
+    font-size: 1rem;
+    padding: .5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.reiniciar:hover {
+    padding: .8rem;
+}
+
